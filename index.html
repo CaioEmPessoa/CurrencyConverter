@@ -12,9 +12,9 @@
         </div>
         
         <div class="calc">
-            <p> Converter: </p> 
+            <p> Valor Inicial: </p> 
             
-            <input type="number" id="valorInicial" class="entry">
+            <input type="number" id="dinheiroInicial" class="entry">
             
             <select id="moedaInicial" onchange="checkCurrency()">
                 <option value="Real">Real</option>
@@ -22,12 +22,12 @@
                 <option value="Euro">Euro</option>
                 <option value="Libra">Libra</option>
             </select>
-
+            
             <p> Para </p>
             
             <select id="moedaFinal" onchange="checkCurrency()">
                 <option value="Real">Real</option>
-                <option value="Dolar">Dolar</option>
+                <option value="Dolar" selected>Dolar</option>
                 <option value="Euro">Euro</option>
                 <option value="Libra">Libra</option>
             </select>
@@ -35,6 +35,7 @@
             <br><br>
             
             <input type="button" id="submit" value="converter" class="submit">
+            <p id="valorFinal" style="white-space: nowrap;">  </p> 
         </div>
         
         <div class="dolar-div">
